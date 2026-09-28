@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <h1>MI PRIMER FORMULARIO</h1>
+    <form action="proceso.php" method="post" enctype="multipart/form-data">
+        <!--grupo1:datos personales-->
+
+        <fieldset>
+            <legend>DATOS PERSONALES</legend>
+            <label for="nombre">NOMBRE</label>
+            <input type="text" id="nombre" name="nombre" placeholder="JHONATAN Y NIVER "required>
+            
+            <br>
+
+            <label for="mail">CORREO</label>
+            <input type="email" id="mail" name="mail" placeholder="DAYROn GAY">
+
+            <br>
+
+            <label for="password">CONTRASEÑA</label>
+            <input type="password" id="password" name="password">
+
+            <br>
+
+            <label for="telefono">TELEFONO</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="999 888 777">
+
+            <br>
+
+            <label for="web">SITIO WEB</label>
+            <input type="url" id="web" name="web" placeholder="http://ejemplo.com">
+            
+            <br>
+
+            <label for="busqueda">BUSQUEDA</label>
+            <input type="search" id="busqueda" name="busqueda">
+
+            <br>
+
+        </fieldset>
+
+
+        <!--grupo2:numeros y rangos-->
+        <fieldset>
+            <legend>NUMEROS Y RANGOS</legend>
+            <label form="edad">EDAD</label>
+            <input type="number" id="edad" name="edad" min="18" max="67">
+            <br>
+            
+            <label for="satisfacción">NIVEL DE SATISFACCIÓN</label>
+            <input type="range" id="satisfacción" name="satisfacción" min="1" max="20">
+            <br>
+
+
+        </fieldset>
+
+
+        <!--grupo3:fecha y hora-->
+        <fieldset>
+            <legend> FECHA Y HORA</legend>
+            <label for="fecha"> FECHA Y DE NACIMIENTO</label>
+            <input type="date" id="fecha" name="fecha">
+            <br>
+
+            <label for="hora">ELECCIÓN HORA</label>
+            <input type="time" id="hora" name="hora">
+            <br>
+
+            <label for="fecha-hora">FECHA Y HORA</label>
+            <input type="datetime-local" id="fecha-hora" name="fecha-hora">
+            <br>
+
+            <label for="mes">MES DE INICIO</label>
+            <input type="month" id="mes" name="mes">
+            <br>
+            <label for="semana">SEMANA</label>
+            <input type="week" id="semana" name="semana">
+            <br>
+        </fieldset>
+        <!--grupo4:seleciones y opciones-->
+        <fieldset>
+            <legend>SELECCIONES Y OPCIONES</legend>
+            <p>GENERO</p>
+            <input type="radio" id="masculino" name="genero" value="M">
+            <label for="masculino">MASCULINO</label>
+            <br>
+            <br>
+
+            <input type="radio" id="femenino" name="genero" value="F">
+            <label for="masculino">FEMENINO</label>
+            <br>
+            <br>
+
+            <input type="radio" id="otro" name="genero" value="O">
+            <label for="masculino">OTRO</label>
+            <br>
+            <br>
+
+            <label>INTERES</label> <br>
+            <input type="checkbox" id="canal deportivo" name="ineres[]" value="canal deportivo">
+            <label for="canal deportivo">CANAL DEPORTIVO</label>
+            <br>
+            <br>
+            <input type="checkbox" id="análisis de fútbol" name="ineres[]" value="análisis de fútbol">
+            <label for="canal deportivo">ANÁLISIS DE FÚTBOL</label>
+            <br>
+            <br>
+            <input type="checkbox" id="analizar el rendimiento de  slecciones" name="ineres[]" value="analizar el rendimiento de  slecciones">
+            <label for="canal deportivo">ANALIZAR EL REDIMIENTO DE SELECCIONES</label>
+            <br>
+            <br>
+            <input type="checkbox" id="Temas calientes sin filtro" name="ineres[]" value="Temas calientes sin filtro">
+            <label for="canal deportivo">TEMAS CALIENTES SI FILTRO</label>
+            <br>
+            <br>
+
+            <input type="checkbox" id=" crisis institucionales de equipos" name="ineres[]" value=" crisis institucionales de equipos">
+            <label for="canal deportivo">CRISIS INSTITUCIONALES DE EQUPOS</label>
+            <br>
+            <br>
+
+            <input type="checkbox" id=" Debates de fútbol en vivo" name="ineres[]" value=" Debates de fútbol en vivo">
+            <label for="canal deportivo">DEBATES DE FÚTBOL EN VIVO</label>
+            <br>
+            <br>
+            <input type="checkbox" id="mercado de fichajes y rumores" name="ineres[]" value="mercado de fichajes y rumores">
+            <label for="canal deportivo">MERCADO DE FICHAJES Y RUMORES</label>
+            <br>
+            <br>
+            <input type="checkbox" id="reacciones en vivo y videos virales" name="ineres[]" value="reacciones en vivo y videos virales">
+            <label for="canal deportivo">REACCIONES EN VIVO Y VIDEOS VIRALES</label>
+            <br>
+            <br>
+            <input type="checkbox" id="programas deportivos con humor" name="ineres[]" value="programas deportivos con humor">
+            <label for="canal deportivo">PROGRAMAS DEPORTIVOS CON HUMOR </label>
+            <br>
+            <br>
+            <input type="checkbox" id="cultura popular y temas de tendencia" name="ineres[]" value="Temas calientes sin filtro">
+            <label for="canal deportivo">CULTURA POPULAR Y TEMAS DE TENDENCIA </label>
+            <br>
+            <br>
+
+            <input type="checkbox" id=" polémicas arbitrales y declaraciones" name="ineres[]" value=" crisis institucionales de equipos">
+            <label for="canal deportivo">POLÉMICAS ARBITRALES Y DECLARACIONES CALIENTES</label>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+            <label for="hogar">HOGAR</label>
+            <br>
+            <br>
+            <label for="pais">País</label>
+            <select id="pais" name="pais">
+                <option for="ecuador">ECUADOR</option>
+                <option for="perú">PERÚ</option>
+                <option for="colombia">COLOMBIA</option>
+                <option for="chile">CHILE</option>
+                <option for="argentina">ARGENTINA</option>
+                <option for="uruguay">URUGUAY</option>
+                <option for="paraguay">PARAGUAY</option>
+                <option for="venezuela">VENEZUELA</option>
+                <option for="panamá">PANAMÁ</option>
+                <option for="bolivia">BOLIVIA</option>
+                <option for="el salvador">EL SALVADOR</option>
+                <option for="costa rica">COSTA RICA</option>
+                <option for="mexcico">MÉXICO</option>
+                <option for="nicaragua">NICARAGUA</option>
+                <option for="honduras">HONDURAS</option>
+                <option for="españa">ESPAÑA</option>
+                <option for="cuba">CUBA</option>
+                <option for="guatemala">GUATEMALA</option>
+                <option for="república dominica">REPLÚCA DOMINICA</option>
+                <option for="puerto rico">PUERTO RICO</option>
+                
+
+            </select>
+            <br>
+            <br>
+            <label for="comida">MI COMIDA PREFERIDA</label>
+            <input type="text" list="mi-comida" id="mi-comida" name="ocmida">
+            <datalist id="mi-comida">
+                <option value="Lomo saltado"></option>
+                <option value="Ají de Gallina"></option>
+                <option value="Arroz con pollo"></option> 
+                <option value="Tallarines rojos"></option>
+                <option value="Causa"></option>
+                <option value="Ceviche"></option>
+                <option value="Lomo saltado"></option>
+                <option value="Ají de Gallina"></option>
+                <option value="Arroz con pollo"></option> 
+                <option value="Tallarines rojos"></option>
+                <option value="Causa"></option>
+                <option value="Ceviche"></option> 
+               
+            </datalist>
+            
+
+
+        </fieldset>
+<!--grupo5:archivo y multimedia-->
+        <fieldset>
+            <legend>ARCHIVO Y MULTIMEDIA</legend>
+            <label for="archivo">ARCHIVO</label>
+            <input type="file" id="archivo" name="archivo">
+            <br>
+            <br>
+
+            <label for="color">COLOR FAVORTIO</label>
+            <input type="color" id="color" name="color" value="#3BCE02">
+            <br>
+            <br>
+                    </fieldset>
+        <fieldset>
+<!--grupo6:texto extensos y ocultos-->
+<legend>TEXTOS EXTENSOS Y OCULTOS</legend>
+<br>
+<label for="biografía">Comentario</label> <br>
+<textarea id="biografía" name="biografía" rows="4"
+cols="60" placeholder="Escribe aqui..."></textarea>
+<br>     
+        </fieldset>
+ 
+
+<!--botones-->
+<input type="reset" value="limpiar formulario">
+<input type="submit" value="enviar formulario">
+    </form>
+    
+</body>
+</html>

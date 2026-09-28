@@ -1,0 +1,266 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  color: #111;
+  padding: 40px 5%;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-size: 2em;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+form {
+  max-width: 720px;
+  margin: 0 auto;
+  background: white;
+  padding: 10px 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   FIELDSET / GRUPOS
+========================= */
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px 25px 25px;
+  margin: 25px 0;
+}
+
+legend {
+  background: black;
+  color: #3BCE02;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9em;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+
+/* =========================
+   ETIQUETAS
+========================= */
+
+label {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin: 10px 0 6px;
+  color: #333;
+}
+
+
+/* =========================
+   CAMPOS DE TEXTO / NÚMERO / FECHA / ETC.
+========================= */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fafafa;
+  color: #111;
+  transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3BCE02;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(59, 206, 2, 0.15);
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+/* =========================
+   RANGO (SLIDER)
+========================= */
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #3BCE02;
+  margin: 10px 0;
+}
+
+
+/* =========================
+   RADIO Y CHECKBOX
+========================= */
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3BCE02;
+  vertical-align: middle;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+fieldset label[for] {
+  text-transform: none;
+  font-weight: 500;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Etiqueta del bloque "GÉNERO" / "INTERES" (sin atributo for) */
+fieldset > p,
+fieldset > label:not([for]) {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 14px;
+  display: block;
+}
+
+
+/* =========================
+   ARCHIVO
+========================= */
+
+input[type="file"] {
+  display: block;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+
+/* =========================
+   COLOR
+========================= */
+
+input[type="color"] {
+  width: 60px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
+  margin: 25px 10px 0 0;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"] {
+  background: #3BCE02;
+  color: black;
+}
+
+input[type="submit"]:hover {
+  background: green;
+  color: white;
+}
+
+input[type="reset"] {
+  background: #eee;
+  color: #333;
+}
+
+input[type="reset"]:hover {
+  background: #ddd;
+}
+
+
+/* =========================
+   LÍNEAS <br> SUELTAS
+   (compactamos el espaciado que generan)
+========================= */
+
+br {
+  line-height: 0.6;
+}
+
+
+/* ==================================================
+   RESPONSIVE — CELULAR
+================================================== */
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 20px 4%;
+  }
+
+  form {
+    padding: 10px 18px 25px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  legend {
+    font-size: 0.8em;
+  }
+
+}
